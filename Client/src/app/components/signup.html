@@ -1,0 +1,118 @@
+<md-card style="background-color: #fbfbfb !important; min-height: 34vw;" layout-align="center center">
+
+  
+
+<md-card class="example-form " layout-align="center center" style="margin: 3%; margin-top:0%; margin-bottom:0%; padding:2%;">
+     <h2 style="text-align: center; color:#12a2dd; padding-top:1%;"> SIGN UP </h2>
+</md-card>
+
+<md-card class="example-form " layout-align="center center" style="margin: 3%; margin-bottom:0%; margin-top:0%; padding :2%;">
+  <form>
+
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <md-input-container class="example-full-width">
+            <input mdInput placeholder="Your Name" #name (keyup)="user.name=name.value" >
+          </md-input-container>
+        </td>
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <md-input-container class="example-full-width">
+            <input mdInput placeholder="Your Email" type="email" #email (keyup)="user.email=email.value" >
+          </md-input-container>
+        </td>
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <md-input-container class="example-full-width">
+            <input mdInput placeholder="Password" type="password" #pw (keyup)="user.pw=pw.value">
+          </md-input-container>
+        </td>
+      </tr>
+    </table>
+
+
+    
+
+  </form>
+  
+  </md-card>
+
+<md-card class="example-form " layout-align="center center" style="margin: 3%; margin-top:0%; padding:2%;">
+      <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+        </td>
+        <td>
+          <button md-button style="background:#12a2dd; color:#fbfbfb; float: right; "  (click)="submit();"> SIGN UP </button>
+        </td>
+      </tr>
+      
+      
+          
+    </table>
+</md-card>
+</md-card>
+
+
+
+
+<!---
+<form class="example-form" style="padding: 1%;">
+
+
+
+  <!--<table class="example-full-width" cellspacing="0"><tr>-->
+<!--<td><md-input-container class="example-full-width">-->
+<!--<input mdInput placeholder="City">-->
+<!--</md-input-container></td>-->
+<!--<td><md-input-container class="example-full-width">-->
+<!--<input mdInput placeholder="State">-->
+<!--</md-input-container></td>-->
+<!--<td><md-input-container class="example-full-width">-->
+<!--<input mdInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">-->
+<!--<md-hint align="end">{{postalCode.value.length}} / 5</md-hint>-->
+<!--</md-input-container></td>-->
+<!--</tr></table>-->
+<!---
+    <table class="example-full-width" cellspacing="0"><tr>
+    <td><md-input-container class="example-full-width">
+      <input mdInput placeholder="Your Name">
+    </md-input-container></td>
+    </tr></table>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+    <td><md-input-container class="example-full-width">
+      <input mdInput placeholder="Your Email" type="email">
+    </md-input-container></td>
+    </tr></table>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+    <td><md-input-container class="example-full-width">
+      <input mdInput placeholder="Password" type="password">
+    </md-input-container></td>
+    </tr></table>
+    
+</form>
+
+
+<!--<h1 md-dialog-title>Dialog</h1>-->
+<!--<div md-dialog-content>What would you like to do?</div>-->
+<!--<div md-dialog-actions>-->
+<!--<button md-button (click)="dialogRef.close('Option 1')">Option 1</button>-->
+<!--<button md-button (click)="dialogRef.close('Option 2')">Option 2</button>-->
+<!--</div>-->
+
+
+<!-- Copyright 2016 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

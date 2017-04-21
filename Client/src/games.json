@@ -1,0 +1,32 @@
+{
+  "games": [
+    {
+      "name": "Game1",
+      "category": "Math",
+      "img": "https://www.callcentrehelper.com/images/stories/2010/2016/07/gamification-760.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "type": "MCQ",
+      "icon": "bubble_chart"
+
+    },
+    {
+      "name": "Game1",
+      "category": "Math",
+      "img": "https://www.callcentrehelper.com/images/stories/2010/2016/07/gamification-760.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "type": "MCQ",
+      "icon": "bubble_chart"
+    },
+    {
+      "name": "Game1",
+      "category": "Math",
+      "img": "https://www.callcentrehelper.com/images/stories/2010/2016/07/gamification-760.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "type": "MCQ",
+      "icon": "bubble_chart"
+    }
+  ]
+}
+
+
+
