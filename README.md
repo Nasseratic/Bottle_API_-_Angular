@@ -1,4 +1,5 @@
 # Digizilla's Task
+
 ** Here is my repo for the task .. **
 
 I decided to use **Python** as a new experience , searched for the several options but I foud that **Bottle** is the best choice for the task its easy light framework to use ..
@@ -10,14 +11,14 @@ The Task List :
 
 - [x] Creating simple login form using the following
 - [x] GET & POST method
-- [x] Server side validation ( just semple one for the pw )
+- [x] Server side validation `( just semple one for the pw )`
 - [x] Authentication of supplied user(must have a ready database in mysql)
-- [x] Forgot password/Reset password link (sends email) ( not tested )
+- [x] Forgot password/Reset password link (sends email) `( not tested )`
 - [x] Use ajax for submitting the form (if you've knowledge of ajax)
 > I have assumed that mean with Ajax the way for connecting the server through js not the specific way of XML
 - [x] Create a simple user profile page (Name, email and password)
 - [x] Use session and cookies for a 2-3 step application (Login form->Login Success Page->My Profile) 
-- [x] Create a large file uploading page ( not tested )
+- [x] Create a large file uploading page `( not tested )`
 - [ ] Use various reserved server level variables to know server info, browser info 
 - [ ] Use constants for storing global variables and use them.
 > Why ! Anyway the constants in python just a varible in capital and for global just use global key word when you change a global variable
@@ -26,3 +27,6 @@ The Task List :
 [ Here ] ( https://developers.google.com/maps/documentation/javascript/distancematrix) and [ Here ] ( http://brianflove.com/2016/10/18/angular-2-google-maps-places-autocomplete/)
 - [X] Create a web services/API for your application.
 
+
+
+### Thank you !
