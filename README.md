@@ -15,7 +15,7 @@ The Task List :
 - [x] Authentication of supplied user(must have a ready database in mysql)
 - [x] Forgot password/Reset password link (sends email) `( not tested )`
 - [x] Use ajax for submitting the form (if you've knowledge of ajax)
-  > I have assumed that mean with Ajax the way for connecting the server through js not the specific way of XML
+  > I have assumed that what you mean by Ajax is the way for connecting the server through js not the specific way of XML
 - [x] Create a simple user profile page (Name, email and password)
 - [x] Use session and cookies for a 2-3 step application (Login form->Login Success Page->My Profile) 
 - [x] Create a large file uploading page `( not tested )`
