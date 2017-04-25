@@ -47,7 +47,10 @@ def check_login(email, pw):
 
 def add_user(name,email,pw):
     #All validation shoud be implemented here
-    cur.execute("SELECT email FROM user WHERE email='"+email+"';")
+   stmt = (
+        "SELECT email FROM user WHERE email=%s"
+        )
+    cur.execute(stmt , email)
     row = cur.fetchone()
     if len(pw) > 8 and row is None :
         cur.execute("SELECT * FROM user")
@@ -57,7 +60,6 @@ def add_user(name,email,pw):
         "VALUES (%s, %s, %s, %s)"
         )
         data = ( id , name , email , pw )
-        
         cursor.execute(insert_stmt, data)
         return True
     else:
