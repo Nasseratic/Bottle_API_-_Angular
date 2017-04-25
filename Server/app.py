@@ -36,7 +36,10 @@ def get_info_by_id(id):
 
 def check_login(email, pw):
     #check if this user exists in the DB
-    cur.execute("SELECT id FROM user WHERE email='"+email+"' AND pw='"+pw+"';")
+        stmt = (
+        "SELECT id FROM user WHERE email=%s AND pw=%s;"
+        )
+    cur.execute(stmt,(email,pw))
     row = cur.fetchone()
     if row is not None:
         return row[0]
@@ -63,22 +66,31 @@ def add_user(name,email,pw):
 
 # requst for reseting a pw 
 def reset_requst(email):
-    cur.execute("SELECT id FROM user WHERE email='"+email+"';")
+    stmt = (
+        "SELECT id FROM user WHERE email=%s"
+        )
+    cur.execute(stmt,email)
     row = cur.fetchone()
     id=row[0]
     new_token = makeToken()
-    cur.execute("INSERT INTO resets(id,token) VALUES ("+id+",'"+new_token+"');")
+    stmt = (
+        "INSERT INTO resets(id,token) VALUES (%s, %s)"
+        )
+    cur.execute(stmt,(id,token))
     return new_token
     
 
 # the idea is that if some one know the token then change the pw and delete the token
 def reset_pw( new_pw, token):
-    cur.execute("SELECT id FROM resets WHERE token='"+token+"';")
+    stmt = ("SELECT id FROM resets WHERE token=%s")
+    cur.execute(stmt , token)
     row = cur.fetchone()    
     if row is not None :
         id=row[0]
-        cur.execute("UPDATE user SET pw ='"+new_pw+"' WHERE id = "+id+";")
-        cur.execute("DELETE FROM resets WHERE id = "+id+";")
+        stmt_u = ("UPDATE user SET pw =%s WHERE id =%s;")
+        cur.execute(stmt_u ,(new_pw,id))
+        stmt_d = ("DELETE FROM resets WHERE id =%s ;")
+        cur.execute(stmt_d,id)
         return True
     else:
         return False
